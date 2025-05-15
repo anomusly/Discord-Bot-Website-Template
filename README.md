@@ -1,6 +1,6 @@
 # Discord Bot Website Template
 
-A modern, responsive website for the Candy Discord music bot. This website showcases the bot's features, commands, and premium offerings with a sleek, user-friendly interface.
+A modern, responsive website for the Discord music bot. This website showcases the bot's features, commands, and premium offerings with a sleek, user-friendly interface.
 
 ## 🌟 Features
 

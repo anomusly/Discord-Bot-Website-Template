@@ -1,7 +1,5 @@
 # Discord Bot Website Template
 
-![Candy Bot Logo](./assets/images/candy.png)
-
 A modern, responsive website for the Candy Discord music bot. This website showcases the bot's features, commands, and premium offerings with a sleek, user-friendly interface.
 
 ## 🌟 Features

@@ -1,0 +1,196 @@
+/**
+ * @format
+ *
+ * Discord Bot Website By Anomus.LY
+ * Repo URL: https://github.com/AnomusLY/CandyWeb
+ * © 2025 Anomus.LY
+ */
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: var(--bg-darker);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, var(--primary), var(--accent));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, var(--primary-light), var(--accent-light));
+}
+
+/* Selection styles */
+::selection {
+  background-color: var(--primary);
+  color: var(--text-white);
+}
+
+/* Glow effects */
+.glow-text {
+  text-shadow: 0 0 10px var(--primary-light);
+}
+
+.glow-box {
+  box-shadow: 0 0 15px var(--primary), 0 0 30px var(--primary-light);
+}
+
+/* Gradient text */
+.gradient-text {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Card hover effects */
+.hover-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Button animations */
+.btn-primary, .btn-secondary {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary::after, .btn-secondary::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.6s ease, height 0.6s ease;
+}
+
+.btn-primary:hover::after, .btn-secondary:hover::after {
+  width: 300%;
+  height: 300%;
+}
+
+/* Animated background */
+.animated-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+.animated-bg::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 56, 56, 0.1) 0%, rgba(10, 10, 10, 0) 70%);
+  animation: rotate 20s linear infinite;
+  z-index: -1;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Floating animation */
+.float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Highlight sections */
+.highlight-section {
+  position: relative;
+}
+
+.highlight-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, rgba(255, 56, 56, 0.1) 0%, rgba(10, 10, 10, 0) 70%);
+  z-index: -1;
+}
+
+/* Candy-themed elements */
+.candy-border {
+  border: 2px solid var(--primary);
+  box-shadow: 0 0 10px var(--primary-light);
+}
+
+.candy-dot {
+  width: 10px;
+  height: 10px;
+  background: var(--primary);
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+/* Music-themed elements */
+.music-wave {
+  display: flex;
+  align-items: center;
+  height: 30px;
+}
+
+.music-wave span {
+  display: block;
+  width: 3px;
+  height: 100%;
+  background-color: var(--primary);
+  margin: 0 2px;
+  border-radius: 3px;
+  animation: wave 1.5s ease-in-out infinite;
+}
+
+.music-wave span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.music-wave span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.music-wave span:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+.music-wave span:nth-child(5) {
+  animation-delay: 0.8s;
+}
+
+@keyframes wave {
+  0%, 100% {
+    height: 30%;
+  }
+  50% {
+    height: 100%;
+  }
+}
